@@ -1,0 +1,107 @@
+@font-face {
+    font-family:'Karlaa-Regular';
+    src: url('font/Karla-Regular.ttf');
+}
+
+* {
+    font-family:'Karlaa-Regular';
+}
+
+body {
+    background-color: rgb(223, 230, 230);
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.main {
+    height: 520px;
+    width: 530px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#message {
+  height: 70px;
+  width: 477px;
+  border-radius: 4px;
+  border: 1px solid rgb(210, 215, 211); 
+}
+#message:hover {
+    border: 1px solid hsl(169, 52%, 50%);
+}
+
+.submit {
+    height: 35px;
+    width: 487px;
+    text-align: center;
+    background-color: hsl(169, 82%, 27%);
+    border: 1px solid hsl(169, 82%, 27%);
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+
+}
+.submit:hover {
+    background-color: black;
+}
+
+.last_name {
+    margin-left: 21px;
+}
+.first_last:hover { 
+    border: 1px solid hsl(169, 52%, 50%);
+}
+
+.first_last {
+    height: 30px;
+    width: 224px;
+    border-radius: 4px;
+    border: 1px solid rgb(210, 215, 211);
+}
+
+#email {
+    height: 30px;
+    width: 477px;
+    border-radius: 4px;
+    border: 1px solid rgb(210, 215, 211);
+}
+
+#email:hover {
+    border: 1px solid hsl(169, 52%, 50%)
+}
+
+.general_e {
+    height: 30px;
+    width: 225px;
+    border-radius: 4px;
+    border: 1px solid rgb(210, 215, 211);
+}
+.general_e:hover {
+    border: 1px solid hsl(169, 52%, 50%)
+}
+
+#query1,#query2,#contacted_by_team {
+    accent-color:hsl(169, 82%, 27%);
+}
+
+.support_r {
+    height: 30px;
+    width: 230px;
+    border-radius: 4px;
+    border: 1px solid rgb(210, 215, 211);
+    margin-left: 245px;
+    margin-top: -32px;
+  
+}
+
+.support_r:hover {
+    border: 1px solid hsl(169, 52%, 50%)
+}
+
+
+.cl_color {
+    color: rgb(70, 66, 66);
+    font-size: 12px;
+}

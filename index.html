@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+    <div id="customAlertBox" class="custom-alert">
+        <div class="custom-alert-content">
+            <span class="close">&times;</span>
+            <p id="alertMessage"></p>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2 style="margin-left: 30px;">Contact Us</h2>
+        <form style="margin-left: 24px;">
+            <div style="display: flex;"> 
+                <div class="first_name">
+                <label for="fname" class="cl_color">First Name *</label><br>
+                <input type="text" id="fname" name="fname" value="" class="first_last" required>
+                </div>
+          
+                <div class="last_name">
+                <label for="lname" class="cl_color">Last Name *</label><br>
+                <input type="text" id="lname" name="lname" value="" class="first_last"  required>
+                </div>
+           </div><br>
+           <div class="email_add">
+                <label for="email" class="cl_color">Email Address *</label><br>
+                <input type="text" id="email" name="email" value="" required>
+           </div><br>
+           <div>
+             <span  class="cl_color">Query type *</span><br><br>                     
+                <div class="general_e">                
+                    <input type="radio" id="query1" name="query" value="" required>
+                    <label for="query1" class="cl_color">General Enquiry</label><br>
+                </div>
+                <div class="support_r">                
+                    <input type="radio" id="query2" name="query" value=""required>
+                    <label for="query2" class="cl_color">Support Request </label><br>
+                </div>
+            </div><br>
+            <div class="message_box">
+                <label for="message" class="cl_color">Message *</label><br>  
+                <input type="text" id="message"><br><br required>
+            </div>
+            <br>  
+            <input type="checkbox" id="contacted_by_team" required> 
+            <label for="contacted_by_team" class="cl_color">I consent to being contacted by the team *</label><br>
+            <br>
+            <button class="submit" onclick="myalert()">Submit</button>           
+        </form>
+    </div>
+    <script src="contact.js"></script>
+    
+</body>
+</html>
