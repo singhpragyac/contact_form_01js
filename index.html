@@ -5,56 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="alert.css">
 
 </head>
 <body>
-    <div id="customAlertBox" class="custom-alert">
-        <div class="custom-alert-content">
-            <span class="close">&times;</span>
-            <p id="alertMessage"></p>
-        </div>
-    </div>
-
-    <div class="main">
-        <h2 style="margin-left: 30px;">Contact Us</h2>
-        <form style="margin-left: 24px;">
-            <div style="display: flex;"> 
-                <div class="first_name">
-                <label for="fname" class="cl_color">First Name *</label><br>
-                <input type="text" id="fname" name="fname" value="" class="first_last" required>
-                </div>
-          
-                <div class="last_name">
-                <label for="lname" class="cl_color">Last Name *</label><br>
-                <input type="text" id="lname" name="lname" value="" class="first_last"  required>
-                </div>
-           </div><br>
-           <div class="email_add">
-                <label for="email" class="cl_color">Email Address *</label><br>
-                <input type="text" id="email" name="email" value="" required>
-           </div><br>
-           <div>
-             <span  class="cl_color">Query type *</span><br><br>                     
-                <div class="general_e">                
-                    <input type="radio" id="query1" name="query" value="" required>
-                    <label for="query1" class="cl_color">General Enquiry</label><br>
-                </div>
-                <div class="support_r">                
-                    <input type="radio" id="query2" name="query" value=""required>
-                    <label for="query2" class="cl_color">Support Request </label><br>
-                </div>
-            </div><br>
-            <div class="message_box">
-                <label for="message" class="cl_color">Message *</label><br>  
-                <input type="text" id="message"><br><br required>
+    <container class="container">
+        <div id="customAlertBox" class="custom-alert">
+            <div class="custom-alert-content">
+                <span class="close" onclick="this.parentElement.parentElement.style.display = 'none';">&times;</span>
+                <svg class="img" xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21"><path fill="#fff" d="M14.28 7.72a.748.748 0 0 1 0 1.06l-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Zm5.47 2.78A9.75 9.75 0 1 1 10 .75a9.76 9.76 0 0 1 9.75 9.75Zm-1.5 0A8.25 8.25 0 1 0 10 18.75a8.26 8.26 0 0 0 8.25-8.25Z"/></svg>
+                <h1 class="message_send">Message Sent!</h1>
+                <p id="alertMessage"></p>           
             </div>
-            <br>  
-            <input type="checkbox" id="contacted_by_team" required> 
-            <label for="contacted_by_team" class="cl_color">I consent to being contacted by the team *</label><br>
-            <br>
-            <button class="submit" onclick="myalert()">Submit</button>           
-        </form>
-    </div>
+        </div>
+
+        <div class="main">
+            <h2 style="margin-left: 30px;">Contact Us</h2>  
+            <form style="margin-left: 24px;" action="javascript:void(0);">
+                <div style="display: flex;"> 
+                    <div class="first_name">
+                    <label for="fname" class="cl_color">First Name *</label><br>
+                    <input type="text" id="fname" name="fname" value="" class="first_last" required>
+                    </div>
+            
+                    <div class="last_name">
+                    <label for="lname" class="cl_color">Last Name *</label><br>
+                    <input type="text" id="lname" name="lname" value="" class="first_last"  required>
+                    </div>
+            </div><br>
+            <div class="email_add">
+                    <label for="email" class="cl_color">Email Address *</label><br>
+                    <input type="text" id="email" name="email" value="" required>
+            </div><br>
+            <div>
+                <span  class="cl_color">Query type *</span><br><br>                     
+                    <div class="general_e">                
+                        <input type="radio" id="query1" name="query" value="" required>
+                        <label for="query1" class="cl_color">General Enquiry</label><br>
+                    </div>
+                    <div class="support_r">                
+                        <input type="radio" id="query2" name="query" value=""required>
+                        <label for="query2" class="cl_color">Support Request </label><br>
+                    </div>
+                </div><br>
+                <div class="message_box">
+                    <label for="message" class="cl_color">Message *</label><br>  
+                    <textarea id="message"></textarea><br><br required>
+                </div>
+                <br>  
+                <input type="checkbox" id="contacted_by_team" required> 
+                <label for="contacted_by_team" class="cl_color">I consent to being contacted by the team *</label><br>
+                <br>
+                <button class="submit custom-button" onclick="myAlert1()">Submit</button>           
+            </form>
+        </div>
+    </container>
     <script src="contact.js"></script>
     
 </body>

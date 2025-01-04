@@ -1,3 +1,4 @@
+/*
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -26,20 +27,20 @@ p {
     color: #666;
     margin-bottom: 10px;
 }
-
-.custom-button {
+*/
+/* .custom-button {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #4CAF50;
+    background-color: hsl(169, 82%, 27%);
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
+} */
 
 .custom-button:hover {
-    background-color: #45a049;
+    background-color: black;
 }
 
 .custom-alert {
@@ -55,15 +56,15 @@ p {
 }
 
 .custom-alert-content {
-    background-color: #fefefe;
-    margin-left: 30rem;
-    margin-top: 20rem;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    border-radius: 8px;
-    position: relative;
+    background-color: #251f1f;
+  margin-left: 19rem;
+  margin-top: 1rem;
+  padding: 12px;
+  border: 1px solid #888;
+  width: 127%;
+  max-width: 419px;
+  border-radius: 8px;
+  position: relative;
 
 }
 
@@ -76,11 +77,24 @@ p {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: rgb(172, 85, 85);
     text-decoration: none;
     cursor: pointer;
 }
 
 #alertMessage {
-    color: #45a049;
+    color: white;
+    margin-left: 18px;
+}
+
+.img {
+    height: 18px;
+    width: 56px;
+}
+
+.message_send {
+  color: white;
+  margin-left: 44px;
+  margin-top: -24px;
+  font-size: 16px;
 }
